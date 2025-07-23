@@ -113,14 +113,17 @@
   padding-top: 16px;
 }
 .insert {
-  width: 348px;
+  width: 100%;
+  max-width: 348px;
   height: 54px;
 
   border-radius: 5px;
   border: 1px solid lightgray;
 
   background-color: transparent;
-  padding: 24px 16px 8px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 .signup {
   padding: 12px 24px;
@@ -434,12 +437,11 @@ section {
   .content {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 
   .console {
     position: absolute;
-    top: 20%; /* adjust as needed to align with screen */
+    top: 15%; /* adjust as needed to align with screen */
     left: 13%;
     width: 74%;
     height: 65%;
