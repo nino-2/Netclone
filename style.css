@@ -404,11 +404,17 @@ section {
 
   .insert {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    max-width: 400px;
+    height: 48px;
     box-sizing: border-box;
-    padding: 12px 12px;
+    border: 1px solid lightgray;
+    color: white;
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+  .insert::placeholder {
     font-size: 16px;
+    line-height: 1.2;
   }
 
   .signup {
