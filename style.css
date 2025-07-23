@@ -396,18 +396,16 @@ section {
   .decision {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    gap: 16px;
+    width: 100%;
+    gap: 12px;
   }
 
   .insert {
-    width: 262px;
-    height: 44px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    background: transparent;
-    padding: 8px 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 16px;
   }
 
   .signup {
@@ -421,23 +419,31 @@ section {
     margin-top: 12px;
     cursor: pointer;
   }
+  .private {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+  }
 
   .frame {
     width: 100%;
-
     height: auto;
   }
 
   .content {
     width: 100%;
-    max-width: 260px;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 
   .console {
     position: absolute;
-    left: 60px;
-    top: 60px;
+    top: 20%; /* adjust as needed to align with screen */
+    left: 13%;
+    width: 74%;
+    height: 65%;
+    overflow: hidden;
   }
 
   .border-style {
